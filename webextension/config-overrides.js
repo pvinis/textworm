@@ -1,15 +1,22 @@
 const multipleEntry = require('react-app-rewire-multiple-entry')([
 	{
 	  entry: 'src/entry/popup.js',
-	  template: 'public/popup.html',
 	  outPath: '/popup.html'
 	},
 	{
 	  entry: 'src/entry/options.js',
-	  template: 'public/options.html',
 	  outPath: '/options.html'
 	},
   ]);
 
-const noChunking = require('react-app-rewire-micro-frontends')
 
+module.exports = {
+webpack: function(config, env) {
+	// firefox doesnt like it with the runtime chunk 🤷‍♂️
+config.optimization.runtimeChunk = false;
+
+	  multipleEntry.addMultiEntry(config);
+
+	  return config;
+	}
+  }
