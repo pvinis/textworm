@@ -12,3 +12,6 @@ const multipleEntry = require('react-app-rewire-multiple-entry')([
   ]);
 
 const noChunking = require('react-app-rewire-micro-frontends')
+
+	  // simple name, without the chunk hash
+	//   config.output.filename= 'static/js/[name].js'
