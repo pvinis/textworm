@@ -1,4 +1,4 @@
 export const App = () => (
-	<p>WOW</p>
+	<p>WO</p>
 )
 
