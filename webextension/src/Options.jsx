@@ -1,4 +1,4 @@
-export const Options = () =>(
+export const Options = () => (
 	<p>Options!!</p>
 )
 

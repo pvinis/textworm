@@ -1,3 +1,5 @@
-import { entry } from "./entry/entry"
-import {App} from './App';
+import { entry } from './entry/entry'
+import { App } from './App'
+
+
 entry(App)

@@ -1,4 +1,4 @@
-export const App = () =>(
-        <p>WOW</p>
-  );
+export const App = () => (
+	<p>WOW</p>
+)
 

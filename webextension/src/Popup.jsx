@@ -1,5 +1,23 @@
-export const Popup = () => (
-    <div style={{height: 40, width: 300}}>
-        <p>Edit <code>src/App.js</code> and WO!aa!! </p>
+import { useEffect, useState } from "react"
+
+export const Popup = () => {
+	const [url, setUrl] = useState(undefined)
+	const [urls, setUrls] = useState([])
+
+
+	const doTheThing = async () => await browser.tabs.create({})
+
+	return (
+    <div>
+		<p>You are on {url}</p>
+		<button onClick={doTheThing}>Boom do your thing for the current url!</button>
+		<p>This tab has been:</p>
+		<ul>
+			{urls.map(u => (
+				<li>
+					<p>{u}</p>
+				</li>
+			))}
+		</ul>
     </div>
-  );
+  )}
