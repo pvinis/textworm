@@ -18,7 +18,7 @@
 	},
 	"devDependencies": {
 		"@parcel/config-webextension": "2.0.0-nightly.2252",
-		"@parcel/optimizer-cssnano": "2.0.0-nightly.630",
+		"@parcel/optimizer-cssnano": "2.0.0-nightly.631",
 		"@parcel/optimizer-htmlnano": "2.0.0-nightly.630",
 		"@parcel/packager-css": "2.0.0-nightly.630",
 		"@parcel/packager-html": "2.0.0-nightly.630",
