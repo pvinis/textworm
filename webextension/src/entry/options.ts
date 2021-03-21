@@ -1,4 +1,4 @@
-import { entry } from './entry'
+import { entry } from './entryGenerator'
 import { Options } from '../Options'
 
 

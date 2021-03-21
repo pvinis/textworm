@@ -1,8 +1,24 @@
 diff --git a/node_modules/react-scripts/config/webpack.config.js b/node_modules/react-scripts/config/webpack.config.js
-index 26c2a65..93050ed 100644
+index 26c2a65..0b8d071 100644
 --- a/node_modules/react-scripts/config/webpack.config.js
 +++ b/node_modules/react-scripts/config/webpack.config.js
-@@ -759,7 +759,7 @@ module.exports = function (webpackEnv) {
+@@ -693,9 +693,12 @@ module.exports = function (webpackEnv) {
+             manifest[file.name] = file.path;
+             return manifest;
+           }, seed);
+-          const entrypointFiles = entrypoints.main.filter(
+-            fileName => !fileName.endsWith('.map')
+-          );
++          const entrypointFiles = {}
++          Object.keys(entrypoints).forEach(entrypoint => {
++            entrypointFiles[entrypoint] = entrypoints[entrypoint].filter(
++              fileName => !fileName.endsWith('.map')
++            );
++          });
+ 
+           return {
+             files: manifestFiles,
+@@ -759,7 +762,7 @@ module.exports = function (webpackEnv) {
            extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
            formatter: require.resolve('react-dev-utils/eslintFormatter'),
            eslintPath: require.resolve('eslint'),

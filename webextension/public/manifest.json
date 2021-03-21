@@ -2,20 +2,15 @@
 	"manifest_version": 2,
 	"name": "TextWorm",
 	"version": "0.1.2",
-	"description": "Full-text search of your browser history",
-	"homepage_url": "https://github.com/pvinis/textworm",
-	"minimum_chrome_version": "74",
-	"icons": {
-		"128": "icon.png"
-	},
-	"content_scripts": [
-		{
-			"matches": ["<all_urls>"],
-			"js": ["static/js/*.js"]
-		}
-	],
+	"permissions": [ "webNavigation", "storage" ],
+    "background": { "scripts": ["background.js"] },
 	"browser_action": {
 		"default_icon": "icon.png",
 		"default_popup": "popup.html"
-	}
+	},
+	"icons": {
+		"128": "icon.png"
+	},
+	"homepage_url": "https://github.com/pvinis/textworm",
+	"description": "Full-text search of your browser history"
 }

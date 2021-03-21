@@ -10,6 +10,8 @@ module.exports = {
 		config.optimization.runtimeChunk = false
 
 		multipleEntry.addMultiEntry(config)
+		// we don't need the main entry point, so we can remove `index` and `App`
+		delete config.entry.main
 
 		return config
 	},
