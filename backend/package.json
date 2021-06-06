@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "fuse.js": "6.4.6",
-    "lowdb": "1.0.0"
+    "lowdb": "2.1.0"
   },
   "devDependencies": {
     "ts-node": "9.1.1",
