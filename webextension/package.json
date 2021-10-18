@@ -22,7 +22,7 @@
 		"@decadejs/eslint-config-react": "1.0.5",
 		"@parcel/config-webextension": "2.0.0-beta.2",
 		"@parcel/optimizer-cssnano": "2.0.0-beta.2",
-		"@parcel/optimizer-htmlnano": "2.0.0-beta.2",
+		"@parcel/optimizer-htmlnano": "2.0.0",
 		"@parcel/packager-css": "2.0.0-beta.2",
 		"@parcel/packager-html": "2.0.0-beta.2",
 		"@parcel/transformer-css": "2.0.0-beta.2",
