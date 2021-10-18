@@ -28,7 +28,7 @@
 		"@parcel/transformer-css": "2.0.0-beta.2",
 		"@parcel/transformer-html": "2.0.0-beta.2",
 		"@parcel/transformer-postcss": "2.0.0-beta.2",
-		"@parcel/transformer-posthtml": "2.0.0-beta.2",
+		"@parcel/transformer-posthtml": "2.0.0",
 		"@parcel/transformer-webextension": "2.0.0-beta.2",
 		"@types/firefox-webext-browser": "82.0.0",
 		"@types/react": "17.0.3",
