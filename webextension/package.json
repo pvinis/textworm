@@ -35,7 +35,7 @@
 		"@types/react-dom": "17.0.2",
 		"eslint": "7.22.0",
 		"eslint-plugin-import": "2.22.1",
-		"parcel": "2.0.0-nightly.630",
+		"parcel": "2.0.0",
 		"patch-package": "6.4.7",
 		"react-app-rewire-micro-frontends": "0.0.1",
 		"react-app-rewire-multiple-entry": "2.2.1",
